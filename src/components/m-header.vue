@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <img class="logo" src="../assets/image/q.jpg" alt="">
 </template>
 
 <script>
@@ -15,22 +15,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/*@import '~/assets/css/reset.css'*/
-h1, h2 {
-  font-weight: normal;
+
+.logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
