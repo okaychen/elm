@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import MHeader from '@/components/m-header'
 
 Vue.use(Router)
 
@@ -9,7 +9,7 @@ export default new Router({
     {
       path: '/',
       name: 'Hello',
-      component: HelloWorld  // 路由中指定组件
+      component: MHeader  // 路由中指定组件
     }
   ]
 })
