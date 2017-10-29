@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MHeader></MHeader>
+    <m-header></m-header>
     <Tab></Tab>
   </div>
 </template>
