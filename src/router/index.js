@@ -17,18 +17,22 @@ export default new Router({
     },
     {
       path: '/recommend',
+      name: 'recommend',
       component: Recommend
     },
     {
       path: '/singer',
+      name: 'singer',
       component: Singer
     },
     {
       path: '/rank',
+      name: 'rank',
       component: Rank
     },
     {
       path: '/search',
+      name: 'component',
       component: Search
     }
   ]

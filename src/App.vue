@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <m-header></m-header>
     <Tab></Tab>
   </div>
 </template>
@@ -22,6 +21,22 @@
 </script>
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #333;
+}
+
+li{
+  list-style:none;
+  float: left;
+}
+a{
+  color: #ccc;
+  text-decoration: none;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
