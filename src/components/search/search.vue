@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="search">
         我是singer
     </div>
 </template>
@@ -11,5 +11,7 @@
 </script>
 
 <style>
-
+    .search{
+        color: #fff;
+    }
 </style>

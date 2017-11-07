@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="singer">
         我是singer
     </div>
 </template>
@@ -11,5 +11,7 @@
 </script>
 
 <style>
-
+    .singer{
+        color: #fff;
+    }
 </style>

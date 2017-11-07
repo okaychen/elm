@@ -9,6 +9,8 @@ import Rank from '@/components/rank/rank'
 Vue.use(Router)  // 注册router
 
 export default new Router({
+  mode: 'history',   // 这里使用history模式提升速度，但是他依赖HTML5 History API和服务器配置
+  base: __dirname,
   routes: [
     {
       path: '/',
@@ -18,7 +20,8 @@ export default new Router({
     {
       path: '/recommend',
       name: 'recommend',
-      component: Recommend
+      component: Recommend,
+      alias: '/otherRe'    // 路由别名，注意'/'
     },
     {
       path: '/singer',

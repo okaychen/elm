@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="rank">
         我是rank
     </div>
 </template>
@@ -11,5 +11,7 @@
 </script>
 
 <style>
-
+    .rank{
+        color: #fff;
+    }
 </style>

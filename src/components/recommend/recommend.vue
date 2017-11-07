@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="recommend">
         我是recommend
     </div>
 </template>
@@ -11,5 +11,7 @@
 </script>
 
 <style>
-
+    .recommend{
+        color:#fff;
+    }
 </style>
