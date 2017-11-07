@@ -1,6 +1,6 @@
 <template>
-    <div class="recommend">
-        我是recommend
+    <div class="shop">
+        我是shop组件
     </div>
 </template>
 
@@ -11,7 +11,7 @@
 </script>
 
 <style>
-    .recommend{
-        color:#fff;
+    .shop{
+        color: #fff;
     }
 </style>

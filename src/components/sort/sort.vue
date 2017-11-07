@@ -1,6 +1,6 @@
 <template>
-    <div class="rank">
-        我是rank
+    <div class="sort">
+        我是sort组件
     </div>
 </template>
 
@@ -11,7 +11,7 @@
 </script>
 
 <style>
-    .rank{
+    .sort{
         color: #fff;
     }
 </style>

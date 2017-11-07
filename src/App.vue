@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <m-header></m-header>
     <Tab></Tab>
   </div>
 </template>
@@ -34,7 +35,7 @@ li{
   float: left;
 }
 a{
-  color: #ccc;
+  color: #ffe79e;
   text-decoration: none;
 }
 #app {

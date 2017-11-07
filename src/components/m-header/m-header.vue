@@ -1,7 +1,7 @@
 <template>
   <div class="logo_wrap">
     <img class="logo" src="../../assets/image/q.jpg" alt="">
-    <span>Gemini Music</span>
+    <span>Gemini Book</span>
   </div>
 </template>
 
@@ -22,6 +22,10 @@ export default {
   padding: 0 10px;
   font-size: 16px;
   color: #ffe79e;
+}
+.logo_wrap{
+  border-bottom: 1px solid #ffe79e;
+  padding: 10px 0px;
 }
 .logo{
   width: 30px;

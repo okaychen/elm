@@ -1,6 +1,6 @@
 <template>
-    <div class="search">
-        我是singer
+    <div class="me">
+        我是Me组件
     </div>
 </template>
 
@@ -11,7 +11,7 @@
 </script>
 
 <style>
-    .search{
+    .me{
         color: #fff;
     }
 </style>

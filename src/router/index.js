@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import MHeader from '@/components/m-header/m-header'
-import Recommend from '@/components/recommend/recommend'
-import Singer from '@/components/singer/singer'
-import Search from '@/components/search/search'
-import Rank from '@/components/rank/rank'
+
+//  import组件
+import Home from '@/components/home/home'
+import Sort from '@/components/sort/sort'
+import Shop from '@/components/shop/shop'
+import Me from '@/components/me/me'
 
 Vue.use(Router)  // 注册router
 
@@ -13,30 +14,25 @@ export default new Router({
   base: __dirname,
   routes: [
     {
-      path: '/',
-      name: 'Hello',
-      component: MHeader  // 路由中指定组件
+      path: '/home',
+      name: 'home',
+      component: Home
     },
     {
-      path: '/recommend',
-      name: 'recommend',
-      component: Recommend,
+      path: '/sort',
+      name: 'sort',
+      component: Sort,
       alias: '/otherRe'    // 路由别名，注意'/'
     },
     {
-      path: '/singer',
-      name: 'singer',
-      component: Singer
+      path: '/shop',
+      name: 'shop',
+      component: Shop
     },
     {
-      path: '/rank',
-      name: 'rank',
-      component: Rank
-    },
-    {
-      path: '/search',
-      name: 'component',
-      component: Search
+      path: '/me',
+      name: 'me',
+      component: Me
     }
   ]
 })
