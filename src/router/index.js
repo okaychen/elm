@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 //  import组件
-import Home from '@/components/home/home'
+// import Home from '@/components/home/home'
 import Sort from '@/components/sort/sort'
 import Shop from '@/components/shop/shop'
 import Me from '@/components/me/me'
@@ -15,8 +15,7 @@ export default new Router({
   routes: [
     {
       path: '/home',
-      name: 'home',
-      component: Home
+      name: 'home'
     },
     {
       path: '/sort',
