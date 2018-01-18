@@ -1,51 +1,23 @@
 <template>
   <div id="app">
-    <m-header></m-header>
-    <Tab></Tab>
+    <img src="./assets/logo.png">
+    <router-view/>
   </div>
 </template>
 
 <script>
-import MHeader from "@/components/m-header/m-header";
-import Tab from "@/components/tab/tab";
 export default {
-  data() {
-    return {
-      msg: "hello world"
-    };
-  },
-  components: {
-    MHeader,
-    Tab
-  }
-};
+  name: 'App'
+}
 </script>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background: #333;
-}
-
-li {
-  list-style: none;
-  float: left;
-}
-a {
-  color: #ffe79e;
-  text-decoration: none;
-}
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 5px 0;
-  margin: 0 auto;
-  width: 100%;
   text-align: center;
   color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
