@@ -10,11 +10,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
-// Add data mock
-var appData = require("../data.json");
-var seller = appData.seller;
-var goods = appData.goods;
-var ratings = appData.ratings;
+// mock data api
+const express = require('express');
+const appDate = require('../mock/data.json')
+const app = express()
+
+const seller = appDate.seller;
+const goods = appDate.goods;
+const ratings = appDate.ratings;
+
 // End
 
 const HOST = process.env.HOST
@@ -32,6 +36,30 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // these devServer options should be customized in /config/index.js
   devServer: {
+    //  add data mock api 
+    before(app) {
+      app.get('/api/seller', function (req, res) {
+        res.json({
+          errno: 0,
+          data: seller
+        })
+      })
+
+      app.get('/api/goods', function (req, res) {
+        res.json({
+          errno: 0,
+          data: goods
+        })
+      })
+
+      app.get('/api/ratings', function (req, res) {
+        res.json({
+          errno: 0,
+          data: ratings
+        })
+      })
+
+    },
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [{
