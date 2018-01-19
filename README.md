@@ -1,30 +1,20 @@
-# vue-music
+# vue-ele
 
-> A Vue.js project
+<center>vue高仿饿了吗外卖 App</center>
 
-## Build Setup
 
-``` bash
-# install dependencies
-npm install
+该项目是本人学习黄老师（ustbhuangyi）慕课网 `Vue.js 高仿饿了么外卖 App` 完成，
 
-# serve with hot reload at localhost:8080
-npm run dev
+课程地址：http://coding.imooc.com/class/74.html
 
-# build for production with minification
-npm run build
+源码地址：https://github.com/ustbhuangyi/vue-sell
 
-# build for production and view the bundle analyzer report
-npm run build --report
+另外，该项目完全是本人在学习过程中一行一行敲写，主要有以下区别和修改（[查看具体修改点这里]()）：
 
-# run unit tests
-npm run unit
+- data.json我从根目录调整到`/mock/data.json`
 
-# run e2e tests
-npm run e2e
+- 新版vuecli中webpack模板删掉了`dev-server.js`，我使用`devServer.before(app)`完成 mock data 的接口
 
-# run all tests
-npm test
-```
+...待续
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+

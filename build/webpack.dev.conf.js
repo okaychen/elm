@@ -10,11 +10,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
-// mock data api
+// use express to do mock data api
 const express = require('express');
-const appDate = require('../mock/data.json')
 const app = express()
 
+const appDate = require('../mock/data.json')
 const seller = appDate.seller;
 const goods = appDate.goods;
 const ratings = appDate.ratings;
