@@ -1,0 +1,21 @@
+body,html
+  line-height: 1
+  font-weight: 200
+  font-family: "PingFang SC","STHeitiSC-Light","Helvetica-Light",Arial,sans-serif
+
+
+border-1px($color)
+  position: relative
+  &:after
+    display: block
+    position absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    border: 1px solid $color
+    content: ' '
+
+bg-image($url)
+  background-image: url($url + "@2x.png")
+  @media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3)
+    background-image: url($url + "@3x.png")
