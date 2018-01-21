@@ -12,10 +12,10 @@
 
 - 新版vuecli中webpack模板删掉了`dev-server.js`，使用`devServer.before(app)`完成 mock data 的接口
 
-- 路由配置调整到'./src/router/index.js'，
+- 路由配置调整到`'./src/router/index.js'`
 
-- 重定向从router.go()更改为{path:'/',redirect:'/goods'}
+- 重定向从`router.go()`更改为`{path:'/',redirect:'/goods'}`
 
-- 页面从v-link指令指定路由更改为<router-link :to="{name:'seller'}"></router-link>，
+- 页面中路由指定从v-link指令更改为`<router-link :to="{name:'seller'}"></router-link>`
 
 ...待续
