@@ -1,6 +1,6 @@
 <template>
-  <div class="header">
-    我是header
+  <div>
+    I am good
   </div>
 </template>
 
@@ -8,6 +8,5 @@
 export default {};
 </script>
 
-<style>
-
+<style lang="stylus" rel="stylesheet/stylus">
 </style>
