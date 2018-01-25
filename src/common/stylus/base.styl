@@ -10,3 +10,15 @@
         -webkit-transform: scaleY(0.5)
         transform: sacle(0.5)
 
+// stricky footer 中clearfix固定写法
+.clearfix
+  display: inline-block
+  &:after
+    display: block
+    content "."
+    height: 0
+    line-height: 0
+    clear: both
+    visibility: hidden
+
+   

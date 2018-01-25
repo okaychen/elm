@@ -16,19 +16,32 @@
           <span class="icon" v-bind:class="classMap[seller.supports[0].type]"></span>
           <span class="text">{{seller.supports[0].description}}</span>
         </div>
-        <div class="support-count" v-if="seller.supports">
+        <div class="support-count" v-if="seller.supports" @click="showDetail">
           <span class="count">{{seller.supports.length}}个</span>
           <i class="icon-keyboard_arrow_right"></i>
         </div>
       </div>
     </div>
     <!-- 公告 -->
-    <div class="bulletin-wrapper">
+    <div class="bulletin-wrapper" @click="showDetail">
       <span class="bulletin-title"></span><span class="bulletin-text">{{seller.bulletin}}</span>
       <i class="icon-keyboard_arrow_right"></i>
     </div>
+    <!-- 背景 -->
     <div class="background">
       <img v-bind:src="seller.avatar" alt="" width="100%" height="100%"/>
+    </div>
+    <!-- 详情弹出层 -->
+    <div v-show="datailShow" class="detail">
+      <div class="detail-wrapper clearfix">
+        <div class="detail-main">
+          <h1 class="name">{{seller.name}}</h1>
+        </div>
+      </div>
+      <!-- stricky footer -->
+      <div class="detail-close" @click="closeDetail">
+        <i class="icon-close"></i>
+      </div>
     </div>
   </div>
 </template>
@@ -38,6 +51,19 @@ export default {
   props: {
     seller: {
       type: Object
+    }
+  },
+  data (){
+    return {
+      datailShow:false
+    }
+  },
+  methods:{
+    showDetail() {
+      this.datailShow = true;
+    },
+    closeDetail() {
+      this.datailShow = false;
     }
   },
   created() {
@@ -116,6 +142,7 @@ export default {
         border-radius 14px
         background rgba(0,0,0,0.2)
         text-align center
+        cursor pointer
         .count
           vertical-align top
           font-size 10px
@@ -158,4 +185,25 @@ export default {
       height 100%
       z-index -1
       filter:blur(10px)
+    .detail
+      position fixed
+      z-index 100
+      top 0px
+      left 0px
+      width 100%
+      height 100%
+      overflow auto
+      background rgba(7,17,27,0.8)
+      .detail-wrapper
+        min-height 100%
+        .detail-main
+          margin-top 64px
+          padding-bottom 64px
+      .detail-close
+        position relative
+        width 32px
+        height 32px
+        margin -64px auto
+        clear both
+        font-size 32px
 </style>
