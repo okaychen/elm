@@ -1,5 +1,4 @@
 <template>
-import { ifError } from 'assert';
   <div class="star" :class="starType">
     <span v-for="itemClass in itemClasses" :class="itemClass" class="star-item"></span>
   </div>
@@ -38,7 +37,8 @@ export default{
       while(result.length < LENGTH){
         result.push(CLS_OFF);
       }
-    },
+      return result;
+    }
   }
 }
 </script>
@@ -56,7 +56,7 @@ export default{
         width 20px
         height 20px
         margin-right 22px
-        background 20px 20px
+        background-size 20px 20px
         &.last-child
           margin-right 0
         &.on
@@ -70,7 +70,7 @@ export default{
         width 15px
         height 15px
         margin-right 16px
-        background 15px 15px
+        background-size 15px 15px
         &.last-child
           margin-right 0
         &.on
@@ -84,7 +84,7 @@ export default{
         width 10px
         height 10px
         margin-right 3px
-        background 10px 10px
+        background-size 10px 10px
         &.last-child
           margin-right 0
         &.on
