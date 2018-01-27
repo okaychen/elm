@@ -34,4 +34,5 @@
 
 - 页面中路由指定从v-link指令更改为`<router-link :to="{name:'seller'}"></router-link>`
 
+- vue 2.0移除了$index,$key，改为`(item,index) in seller.supports`，以这种v-for遍历方式，使用index索引
 ...待续
