@@ -34,5 +34,8 @@
 
 - 页面中路由指定从v-link指令更改为`<router-link :to="{name:'seller'}"></router-link>`
 
-- vue 2.0移除了$index,$key，改为`(item,index) in seller.supports`，以这种v-for遍历方式，使用index索引
+- vue 2.0移除了v-for中的$index,$key，改为`(item,index) in seller.supports`，以这种v-for遍历方式，使用index索引
+
+-vue2.0废弃了v-el,v-ref，改为`ref='menuWrapper'`，以这种方式，并在js中通过`this.$refs.menuWrapepr`获取元素
+
 ...待续
