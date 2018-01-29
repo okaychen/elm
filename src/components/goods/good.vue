@@ -34,12 +34,14 @@
         </li>
       </ul>
     </div>
+    <shopcart></shopcart>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
 
 import BScroll from 'better-scroll';
+import shopcart from '../shopcart/shopcart';
 
 const ERR_OK = 0;
 
@@ -112,6 +114,9 @@ export default {
       let el = foodList[index];
       this.foodsScroll.scrollToElement(el,300);
     }
+  },
+  components:{
+    shopcart
   }
 }
 </script>
