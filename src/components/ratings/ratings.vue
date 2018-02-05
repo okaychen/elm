@@ -10,17 +10,17 @@
         <div class="overview-right">
           <div class="score-wrapper">
             <span class="title">服务态度</span>
-            <star></star>
+            <star :size="24" :score="seller.serviceScore"></star>
             <span class="score">{{seller.serviceScore}}</span>
           </div>
           <div class="score-wrapper">
             <span class="title">商品评分</span>
-            <star></star>
+            <star :size="24" :score="seller.foodScore"></star>
             <span class="score">{{seller.foodScore}}</span>
           </div>
           <div class="delivery-wrapper">
             <span class="title">送达时间</span>
-            <span class="delivery"></span>
+            <span class="delivery">{{seller.deliveryTime}}分钟</span>
           </div>
         </div>
       </div>
@@ -46,10 +46,11 @@ export default {
 
 
 <style lang="stylus" tepe="stylesheet/stylus">
-@import "../../common/stylus/mixin.styl"
+  @import "../../common/stylus/mixin.styl"
+  
   .ratings
     position: absolute
-    top: 174px
+    top: 174px 
     bottom: 0
     left: 0
     width: 100%
