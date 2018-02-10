@@ -19,4 +19,50 @@ Here are some of the features you may notice
 - mobile end one pixel
 - stricky footer
 
+# Build Setup
+
+```sh
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+```
+
+# API
+data mock api
+
+```js
+  devServer: {
+    //  add data mock api 
+    before(app) {
+      app.get('/api/seller', function (req, res) {
+        res.json({
+          errno: 0,
+          data: seller
+        })
+      })
+
+      app.get('/api/goods', function (req, res) {
+        res.json({
+          errno: 0,
+          data: goods
+        })
+      })
+
+      app.get('/api/ratings', function (req, res) {
+        res.json({
+          errno: 0,
+          data: ratings
+        })
+      })
+
+    },
+```
+- seller `/api/seller`
+- goods `/api/goods`
+- ratings `/api/ratings`
 
