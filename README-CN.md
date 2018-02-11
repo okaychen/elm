@@ -1,5 +1,15 @@
 # vue-ele
 
+<p align="center">
+  <img src="dist/static/images/home.gif" width="350" alt="RetroSnaker" />
+  <img src="dist/static/images/pop.gif" width="350" alt="RetroSnaker" />
+</p>
+
+<p align="center">
+  <img src="dist/static/images/ratings.gif" width="350" alt="RetroSnaker" />
+  <img src="dist/static/images/seller.gif" width="350" alt="RetroSnaker" />
+</p>
+
 # Libraries
 下面是一些核心的依赖
 - vue（^2.5.2）
@@ -14,6 +24,53 @@
 - 数据mock
 - 处理移动端一像素
 - stricky footer 布局
+
+# Build Setup
+
+```sh
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+```
+
+# API
+数据mock api
+
+```js
+  devServer: {
+    //  add data mock api 
+    before(app) {
+      app.get('/api/seller', function (req, res) {
+        res.json({
+          errno: 0,
+          data: seller
+        })
+      })
+
+      app.get('/api/goods', function (req, res) {
+        res.json({
+          errno: 0,
+          data: goods
+        })
+      })
+
+      app.get('/api/ratings', function (req, res) {
+        res.json({
+          errno: 0,
+          data: ratings
+        })
+      })
+
+    },
+```
+- seller `/api/seller`
+- goods `/api/goods`
+- ratings `/api/ratings`
 
 # Thanks
 

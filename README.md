@@ -4,6 +4,18 @@ ing...
 
 [中文 请点这里](./README-CN.md)
 
+<p align="center">
+  <img src="dist/static/images/home.gif" width="350" alt="RetroSnaker" />
+  <img src="dist/static/images/pop.gif" width="350" alt="RetroSnaker" />
+</p>
+
+<p align="center">
+  <img src="dist/static/images/ratings.gif" width="350" alt="RetroSnaker" />
+  <img src="dist/static/images/seller.gif" width="350" alt="RetroSnaker" />
+</p>
+
+
+
 # Libraries
 The following are some core dependence
 - vue（^2.5.2）
