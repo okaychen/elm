@@ -1,7 +1,5 @@
 # vue-ele
 
-ing...
-
 [中文 请点这里](./README-CN.md)
 
 <p align="center">
