@@ -78,3 +78,6 @@ data mock api
 - goods `/api/goods`
 - ratings `/api/ratings`
 
+# Thanks
+
+- [ustbhuangyi](http://coding.imooc.com/class/74.html)
