@@ -30,6 +30,7 @@
 - stricky footer 布局
 
 # Build Setup
+下面会告诉你如何安装依赖启动和打包这个项目
 
 ```sh
 # install dependencies
