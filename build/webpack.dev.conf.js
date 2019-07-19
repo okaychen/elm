@@ -14,7 +14,7 @@ const portfinder = require('portfinder')
 const express = require('express');
 const app = express()
 
-const appDate = require('../mock/data.json')
+const appDate = require('../mock/good.json')
 const seller = appDate.seller;
 const goods = appDate.goods;
 const ratings = appDate.ratings;
@@ -67,7 +67,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         to: path.posix.join(config.dev.assetsPublicPath, 'index.html')
       }, ],
     },
-    hot: true,
+    hot: true, // 自动打开的浏览器自动更新-okaychen
     contentBase: false, // since we use CopyWebpackPlugin.
     compress: true,
     host: HOST || config.dev.host,
