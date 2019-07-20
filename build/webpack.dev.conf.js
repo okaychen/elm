@@ -10,15 +10,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
+// const apiMocker = require('webpack-api-mocker')
+// const mocker = require('../mock/api.js');
+
 // use express to do mock data api
 const express = require('express');
 const app = express()
-
-const appDate = require('../mock/good.json')
+const appDate = require('../mock/data/good.json')
 const seller = appDate.seller;
 const goods = appDate.goods;
 const ratings = appDate.ratings;
-
 // End
 
 const HOST = process.env.HOST
@@ -58,7 +59,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
           data: ratings
         })
       })
-
+      // apiMocker(app, mocker)
     },
     clientLogLevel: 'warning',
     historyApiFallback: {

@@ -38,6 +38,7 @@ export default {
         console.log(this.seller);
       }
     })
+
   },
   components: {
     "v-header": header
