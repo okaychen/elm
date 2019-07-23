@@ -1,13 +1,13 @@
 # vue-ele
 
 <p align="center">
-  <img src="dist/static/images/home.gif" width="200" alt="home" />
-  <img src="dist/static/images/pop.gif" width="200" alt="pop" />
+  <img src="dist/static/images/home.gif" width="250" alt="home" />
+  <img src="dist/static/images/pop.gif" width="250" alt="pop" />
 </p>
 
 <p align="center">
-  <img src="dist/static/images/ratings.gif" width="200" alt="ratings" />
-  <img src="dist/static/images/seller.gif" width="200" alt="seller" />
+  <img src="dist/static/images/ratings.gif" width="250" alt="ratings" />
+  <img src="dist/static/images/seller.gif" width="250" alt="seller" />
 </p>
 
 # Libraries
