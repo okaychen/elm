@@ -1,5 +1,9 @@
 # vue-ele
 
+<p align='center'>
+  ![license](https://img.shields.io/badge/powered%20by-vue%202%2B-green.svg)
+</p>
+
 <p align="center">
   <img src="dist/static/images/home.gif"  alt="home" />
   <img src="dist/static/images/pop.gif"  alt="pop" />
