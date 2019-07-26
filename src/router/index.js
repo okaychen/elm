@@ -16,7 +16,7 @@ export default new Router({
   linkActiveClass: 'active',
   routes: [{
     path: '/',
-    redirect: '/home'
+    redirect: '/shop'
   }, {
     path: '/home',
     name: 'home',
