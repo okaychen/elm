@@ -1,23 +1,24 @@
 <template>
-    <div class="">
+  <div class="">
 
-        <v-bottom></v-bottom>
-        <router-view></router-view>
-    </div>
+    <v-bottom></v-bottom>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import bottom from "../components/bottom/bottom.vue";
+  import bottom from "../components/bottom/bottom.vue";
 
-export default {
-    name:"home-view",
-    data(){
-        return {}
+  export default {
+    name: "home-view",
+    data() {
+      return {}
     },
     components: {
-        "v-bottom": bottom
+      "v-bottom": bottom
     }
-}
+  }
+
 </script>
 
 <style lang="stylus">
