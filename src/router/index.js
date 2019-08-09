@@ -1,13 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import VueResource from 'vue-resource';
 
 import homeView from '../views/homeView.vue';
 import shopView from '../views/shopView.vue';
-
 import goods from '../components/goods/good.vue';
 import ratings from '../components/ratings/ratings.vue';
 import seller from '../components/seller/seller.vue';
-import VueResource from 'vue-resource';
 
 Vue.use(Router);
 Vue.use(VueResource);
